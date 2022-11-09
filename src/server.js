@@ -31,5 +31,5 @@ mongoose.connect(uri,{
 
 
 
-const PORT = process.env.PORT || 9000;
-app.listen(PORT, ()=>console.log("Server started at  PORT: " + PORT));
+const port = process.env.PORT || 9000;
+app.listen(port, ()=>console.log("Server started at  PORT: " + port));

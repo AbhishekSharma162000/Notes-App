@@ -19,7 +19,7 @@ mongoose.connect(uri,{
 }).then(()=>{
 
     app.get('/', (req, res)=>{
-       const respone = ({ message: "API Works!"});
+       const respone = ({ statuscode: res.statusCode, message: "API Works!"});
        res.json(respone);
     });
 
